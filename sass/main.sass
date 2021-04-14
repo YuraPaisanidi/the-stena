@@ -4,25 +4,15 @@
 .container
 	width: 100%
 	max-width: 1296px
-	padding: 0 20px
 	margin: 0 auto
 
-	+r(1320)
-		max-width: 1136px
+	+r(1280)
+		max-width: 648px
 
-	+r(1160)
-		max-width: 976px
-	
-	+r(996)
-		max-width: 816px
-
-	+r(840)
-		max-width: 610px
-
-	+r(670)
+	+r(768)
 		max-width: 568px
-
-	+r(576)
+	
+	+r(640)
 		max-width: 404px
 
 	+r(480)
@@ -102,13 +92,10 @@
 		display: grid
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
 
-		+r(840)
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+		+r(1280)
+			grid-template-columns: 1fr 1fr 1fr 1fr 
 
-		+r(670)
-			grid-template-columns: 1fr 1fr 1fr 1fr	
-
-		+r(576)
+		+r(640)
 			grid-template-columns: 1fr 1fr
 
 	&__item
@@ -123,27 +110,15 @@
 			&:hover
 				cursor: pointer
 
-		+r(1320)
+		+r(1280)
+			width: 160px
+			height: 80px
+
+		+r(768)
 			width: 140px
 			height: 70px
 
-		+r(1160)
-			width: 120px
-			height: 60px
-
-		+r(996)
-			width: 100px
-			height: 50px
-
-		+r(840)
-			width: 120px
-			height: 60px
-
-		+r(670)
-			width: 140px
-			height: 70px
-
-		+r(576)
+		+r(640)
 			width: 200px
 			height: 100px
 
@@ -163,7 +138,7 @@
 	background-color: #ffffff
 	border: none
 
-	+r(840)
+	+r(1280)
 		display: none
 
 .copyright
@@ -172,18 +147,14 @@
 	text-align: center
 	border-bottom: none
 
-	+r(1200)
+	+r(1280)
 		font-size: 14px
-
-	+r(996)
-		font-size: 12px
-
-	+r(840)
-		font-size: 14px
-
-	+r(670)
 		grid-column-start: 1
 		grid-column-end: 5
+
+	+r(640)
+		grid-column-start: 1
+		grid-column-end: 3
 	
 	+r(576)
 		grid-column-start: 1
